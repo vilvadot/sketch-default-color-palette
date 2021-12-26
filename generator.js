@@ -48,7 +48,7 @@ const generate = (ignoreUrl) => {
 
   removeOldPalette()
   drawPalette(palette);
-  updateUrl({ size: SIZE, palette: palette.toString()});
+  updateUrl({ palette: palette.toString(), size: SIZE });
   generateFaviconFromSVG(favicon.node);
 };
 
